@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Tour Guide - TripTales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .navbar-brand {
+            margin-right: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                text-align: center;
+            }
+        }
+
+        .tour-section {
+            padding: 40px 0;
+        }
+
+        .tour-section h2 {
+            color: #d35400;
+        }
+
+        .tour-section p {
+            margin-top: 20px;
+        }
+
+        .btn-custom {
+            background-color: #d35400;
+            color: white;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <nav class="navbar navbar-expand-lg static-top" style="background-color: #F2B21F;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="..." height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="recommendation.html">Recommendations</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="guide.html">Virtual Tour Guide</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+    <div class="container my-5">
+        <div class="row tour-section">
+            <div class="col-md-8">
+                <h2>Virtual Tour Guide</h2>
+                <p>Welcome to the Virtual Tour Guide of Bromo Mountain! Explore the stunning landscapes, witness the sunrise, and experience the beauty of Bromo from the comfort of your home. Our virtual tour provides a 360-degree view, allowing you to navigate and explore the destination as if you were actually there.</p>
+                <h3>How to Use the Virtual Tour</h3>
+                <p>To start the tour, simply click on the play button in the video below. Use your mouse or touchpad to navigate around the 360-degree view. You can also click on the different icons within the tour to learn more about specific points of interest.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h3>Features</h3>
+                <ul>
+                    <li>360-degree panoramic views</li>
+                    <li>Interactive hotspots with additional information</li>
+                    <li>High-quality images and videos</li>
+                    <li>Virtual guide with narration</li>
+                </ul>
+                <button class="btn btn-custom mt-4">Start Your Virtual Tour</button>
+            </div>
+            <div class="col-md-4">
+                <img src="images/Margomulyo.jpg" class="img-fluid rounded mb-4" alt="Bromo Mountain Tour">
+                <img src="images/padangPadang.jpg" class="img-fluid rounded mb-4" alt="Bromo Mountain Tour">
+                <img src="images/cobanRondo.jpg" class="img-fluid rounded mb-4" alt="Bromo Mountain Tour">
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white" style="background-color: #F2B21F;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-facebook-f"></i></a>
+                <!-- Twitter -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-twitter"></i></a>
+                <!-- Google -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-google"></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/id.triptales/" role="button" target="_blank" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-instagram"></i></a>
+                <!-- Linkedin -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button" data-aos="fade-up" data-aos-delay="500"><i class="fab fa-linkedin-in"></i></a>
+                <!-- Github -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!" role="button" data-aos="fade-up" data-aos-delay="600"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright: TripTales
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
